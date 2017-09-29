@@ -23,15 +23,7 @@ import org.apache.commons.io.IOUtils;
  */
 public class PDFUtil {
 
-  public static void main(String[] args) throws Exception {
-    ByteArrayOutputStream target = new ByteArrayOutputStream();
-    ByteArrayOutputStream source = new ByteArrayOutputStream();
-    String fil = "C:/Users/rfteves/Documents/labelsample.pdf";
-    byte[] s = IOUtils.toByteArray(new FileInputStream(fil));
-    PDFUtil pdf = new PDFUtil();
-    pdf.tilex(s, target);
-    IOUtils.write(target.toByteArray(), new FileOutputStream("c:/java/kkk.pdf"));
-  }
+  
 
   public FBAUsage tiled(byte[] src, ByteArrayOutputStream dest)
     throws IOException, DocumentException, java.io.IOException {
